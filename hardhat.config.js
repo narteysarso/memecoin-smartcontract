@@ -22,10 +22,10 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 module.exports = {
   solidity: "0.8.4",
   networks: {
-    // rinkeby: {
-    //   url: "",
-    //   accounts: [`${process.env.RINKEBY_ACCOUNT}`]
-    // },
+    rinkeby: {
+      url: "https://eth-rinkeby.alchemyapi.io/v2/24CsxbI0DlS649nXXi1mI1uQ6dL4UPnQ",
+      accounts: [`${process.env.RINKEBY_ACCOUNT}`]
+    },
     ganache: {
       accounts: [`${process.env.GANACHE_ACCOUNT}`],
       url: "http://localhost:7545",

@@ -11,7 +11,7 @@ contract MemeCoin is ERC20, Ownable, ERC20Burnable{
     event tokensBurned(address indexed owner, uint256 amount, string message);
     event additionalTokensMinted(address indexed owner, uint256 amount, string message);
 
-    constructor() ERC20("FoxCoin", "Fox") {
+    constructor() ERC20("SarzCoin", "Sarz") {
         _mint(msg.sender, 1000 * 10**decimals());
         emit tokensMinted(msg.sender, 1000 * 10**decimals(), "Initial supply of tokens minted");
     }
